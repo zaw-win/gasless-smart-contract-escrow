@@ -1,0 +1,26 @@
+Epic,Task,Status,Priority,Depends On
+Project Setup,"Initialize monorepo (backend, contracts, frontend placeholder)",To Do,🔥 High,
+Project Setup,Install and configure FastAPI + Web3.py,To Do,🔥 High,"Initialize monorepo (backend, contracts, frontend placeholder)"
+Project Setup,Install Ollama + run local LLM (Mistral or LLaMA 3),To Do,🔥 High,"Initialize monorepo (backend, contracts, frontend placeholder)"
+Project Setup,Create shared .env config structure,To Do,✅ Medium,Install and configure FastAPI + Web3.py
+Project Setup,Connect to Base Goerli RPC (Alchemy or Infura),To Do,✅ Medium,Create shared .env config structure
+Invoice Management,Create invoice model in PostgreSQL,To Do,🔥 High,Install and configure FastAPI + Web3.py
+Invoice Management,Create POST /invoice API to create invoice + milestones,To Do,🔥 High,Create invoice model in PostgreSQL
+Invoice Management,Create GET /invoice and /invoice/:id endpoints,To Do,✅ Medium,Create POST /invoice API to create invoice + milestones
+Invoice Management,Add business logic for milestone tracking,To Do,✅ Medium,Create POST /invoice API to create invoice + milestones
+Smart Contract,Write Solidity contract for escrow with milestones,To Do,🔥 High,"Initialize monorepo (backend, contracts, frontend placeholder)"
+Smart Contract,Deploy to Base Goerli (Remix or Hardhat),To Do,🔥 High,Write Solidity contract for escrow with milestones
+Smart Contract,Create fund_escrow() API using Web3.py,To Do,🔥 High,Deploy to Base Goerli (Remix or Hardhat)
+Smart Contract,Create release_milestone() API using Web3.py,To Do,✅ Medium,Deploy to Base Goerli (Remix or Hardhat)
+Smart Contract,Listen for Funded and Released events (log to DB),To Do,✅ Medium,Create fund_escrow() API using Web3.py
+Agent Interface,Integrate LangChain with Ollama + local model,To Do,🔥 High,Install Ollama + run local LLM (Mistral or LLaMA 3)
+Agent Interface,Define function schema for invoice/milestone actions,To Do,✅ Medium,Integrate LangChain with Ollama + local model
+Agent Interface,Create intent parser or agent chain in LangChain,To Do,✅ Medium,Define function schema for invoice/milestone actions
+Agent Interface,Create /chat endpoint in FastAPI to route intent,To Do,✅ Medium,Create intent parser or agent chain in LangChain
+Agent Interface,Handle confirmations and summaries in LLM output,To Do,⏳ Low,Create /chat endpoint in FastAPI to route intent
+Notifications,Integrate SendGrid for transactional emails,Backlog,⏳ Low,Create POST /invoice API to create invoice + milestones
+Notifications,Send email when invoice is funded or milestone is released,Backlog,⏳ Low,Integrate SendGrid for transactional emails
+User Management,Implement email/password or token auth,To Do,✅ Medium,"Initialize monorepo (backend, contracts, frontend placeholder)"
+User Management,Associate invoices with user accounts,To Do,✅ Medium,Implement email/password or token auth
+KYC & Ramps,Integrate Sumsub or Persona sandbox,Backlog,⏳ Low,Implement email/password or token auth
+KYC & Ramps,Integrate Ramp or MoonPay sandbox API,Backlog,⏳ Low,Create POST /invoice API to create invoice + milestones
