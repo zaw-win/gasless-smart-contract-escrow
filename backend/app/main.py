@@ -5,7 +5,6 @@ from contextlib import asynccontextmanager
 from backend.app.routes.escrow import router as escrow_router 
 from .routes.invoice import router as invoice_router
 from .routes.users import router as users_router
-# from .routes.chat import router as chat_router
 from backend.app.database.utils import execute_sql
 from backend.app.database.ddl import *
 # from backend.app.services.event_listener import run_event_listener
@@ -37,4 +36,3 @@ def root():
 app.include_router(escrow_router)
 app.include_router(invoice_router)
 app.include_router(users_router)
-# app.include_router(chat_router)

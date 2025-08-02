@@ -89,8 +89,6 @@ coverage/
 # Jupyter Notebooks
 .ipynb_checkpoints/
 
-# Project Management (optional - remove if you want to keep these)
-"Project Management/"
 
 # Backup files
 *.bak
